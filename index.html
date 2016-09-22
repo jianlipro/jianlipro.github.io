@@ -1,132 +1,382 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<link href="https://cdn.bootcss.com/fullPage.js/2.8.6/jquery.fullPage.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/index.css">
-        <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
-	</head>
-	<body>
-		<div id="mask" >
-            <div id="maskleft"></div>
-            <div id="maskright"></div> 
-            <div id="maskmain">
-                <h1>My resume</h1>
-                <hr>
-                <p>求职中</p>
-            </div>
-            <a class="enter" href="#17Jia">About me</a>
-        </div>
-        <div id="fullpage">
-    		<div class="section sec1">
-                <h1 class="sec1_title">17Jia</h1>
-    			<div class="imgbox">
-                    <div class="imgbanner_box" style="display: none;">大连海边~</div>
-                    <img src="img/me.jpg" alt="很酷的自拍" width="200px" height="auto">      
-                </div>
-                <div class="sec1_info sec1_info_1">
-                    <p>目前坐标&nbsp;湖南常德</p>
-                    <p></p>
-                    <p>性别男，爱好女</p>
-                </div>
-                <div class="sec1_info sec1_info_2">
-                    <p>我在&nbsp;<a href="https://www.baidu.com/s?wd=长春师范大学" target="_blank" style="color:white">长春师范大学</a></p>
-                    <p>计算机科学与技术专业</p>
-                    <p>2017年应届毕业生</p>
-                </div>
-                <div class="sec1_info_3">
-                    <p>打游戏、看动漫、练书法、爱架子鼓、也爱品茶。更爱<span>撸代码！</span></p>
-                    <br>
-                    <h1>I'm 李其珈 <span class="mysex">♂</span></h1>
-                </div>
-                
-    		</div>
-    		<div class="section sec2">
-                <h1 class="sec2_title">Skill</h1>
-            <ul class="skill_list">
-                <li><span>html</span>&nbsp; <progress max="100" value="70"></progress></li>
-                <li><span>css</span>&nbsp; <progress max="100" value="65"></progress></li>
-                <li><span>javascript</span>&nbsp; <progress max="100" value="85"></progress></li>
-                <li><span>jquery</span>&nbsp; <progress max="100" value="80"></progress></li>
-                <li><span>node.js</span>&nbsp; <progress max="100" value="30"></progress></li>
-                <li><span>bootstrap</span>&nbsp; <progress max="100" value="60"></progress></li>
-                <li><span>angular.js</span>&nbsp; <progress max="100" value="55"></progress></li>
-                <li><span>photoshop</span>&nbsp; <progress max="100" value="65"></progress></li>
-            </ul>
-            <div class="skill_info">
-                <h1>关于前端,</h1>
-                <p>html、css基本功我就不细说了~</p>
-                <p>自认为Javascript基础比较扎实。</p>
-                <p>熟悉JS面向对象编程，虽然静态页用不到OOP。= =</p>
-                <p>非常喜欢用Jquery【其实是JS写兼容太麻烦..】</p>
-                <p>总觉得自己没有设计细胞，所以也喜欢使用bootsrap，AmazeUI等UI框架。</p>
-                <br/>
-                <p>从16年8月开始，每天都在找资料学习node.js。node修炼中。</p>
-                <p>接触过angular.js、react等MV*框架，但是自己的小项目并没有机会使用这些，比如这个简历。。</p>
-                <p>想实习，想工作，努力提高自己的姿势水平。为IT行业贡献出自己的一份力量(笑~)</p>
-            </div>
+*{
+	font-family: 'Comic Sans MS','微软雅黑';
+}
+a{
+	text-decoration: none;
+}
 
-            </div>
-    		<div class="section sec3">
-                <h1 class="sec3_title">Project</h1> 
-                <div class="sec3_pro">
-                    <div>
-                        <h1>H5音乐播放器</h1>
-                        <p>使用原生JS模拟H5的Audio。能使用基本的播放暂停换曲等功能</p>
-                    </div>
-                    <div>
-                        <h1>个人网站</h1>
-                        <p>做过一个毫无实际内容的个人网站..</p>
-                    </div>
-                    <div>
-                        <h1>Node.js留言模块</h1>
-                        <p>使用node.js做的留言模块，基友们可以自由的在我的个人网站灌水= =</p>
-                    </div>
-                    <div>
-                        <h1>Node.js恶意灌水模块</h1>
-                        <p>从用户发送的http请求中搜寻相关信息，在新浪贴吧等地方实行高速灌水= =</p>
-                    </div>
-                </div>
-            </div>
-    		<div class="section sec4">
-                <h1 class="sec2_title">About</h1>   
-                <div class="sec4_about">
-                    <div>
-                        <h1>个<br>人</h1>
-                        <div>
-                            <h3>经历：</h3>
-                            <p>大一担任过学生会宣传部部长，负责学院板报以及各种活动宣传</p>
-                            <p>大二参加过学校ACM社团</p>
-                            <p>大三参加百度IFE</p>
-                            <p>目前修炼中……</p>
-                        </div>
 
-                    </div>
-                    <div>
-                        <h1>工<br>作</h1>
-                        <div>
-                            <h3>希望：</h3>
-                            <p>是一家互联网公司</p>
-                            <p>有很多大牛</p>
-                            <p>氛围好</p>
-                            <p>实习或者工作都行，渴望成长</p>
-                            <p>薪水什么的您看心情给呗~</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section sec5">
-                <h1 class="sec1_title">Contact</h1>
-                <div class="sec5_call">
-                    <button class="callme callme_1" href="#17Jia">Call me</button>
-                    <a class="callme" href="https://weibo.com/17jiapapa" target="_blank"><span></span>新浪微博</a>
-                    <button class="callme" href="#"><span></span>QQ:896970511</button>
-                    <button class="callme" href="#"><span></span>Phone:18627639323</button>
-                </div>
-            </div>
-		</div>
-    <script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.js"></script>
-    <script src="js/index.js"></script>
-    <script src="https://cdn.bootcss.com/fullPage.js/2.8.6/jquery.fullPage.js"></script>
-	</body>
-</html>
+#mask{
+	position: fixed;
+	z-index: 1000;
+	background-color:#CCFFCC;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+
+}
+
+#maskleft{
+	width: 50%;
+	height: 100%;
+	background-color: #333333;
+	position: absolute;
+	display: none;
+}
+
+#maskright{
+	width: 50%;
+	height: 100%;
+	background-color: #339999;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: none;
+}
+
+#maskmain{
+	background-color: #CCFFCC;
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	left: 25%;
+
+}
+
+#maskmain h1{
+	position: absolute;
+	display: none;
+	top: 30px;
+
+}
+
+#maskmain hr{
+	position: absolute;
+	top: 30px;
+	width: 0;
+	height: 1px;
+	background-color: black;
+	border: 1px solid black;
+}
+
+#maskmain p{
+	font-size: 24px;
+	width: 100px;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: -50px;
+}
+
+.enter{
+	width: 200px;
+	height: 50px;
+	font-size: 24px;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	background-color: white;
+	border: 3px solid black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -25px;
+	margin-left: -100px;
+	cursor: pointer;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s; /* Firefox 4 */
+	-webkit-transition: all 0.5s; /* Safari 和 Chrome */
+	-o-transition: all 0.5s; /* Opera */
+	outline: none;
+}
+.enter:visited{
+	color: black;
+}
+.enter:hover{
+	background-color: black;
+	color: white;
+}
+.fp-controlArrow.fp-prev{
+	opacity: 0.5;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+}
+
+.fp-controlArrow.fp-next{
+	opacity: 0.5;
+	position: absolute;
+	top: 50%;
+	right: 10%;
+}
+.sec1,.sec5{
+	color: #FFFFCC;
+}
+.imgbox{
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border: 2px solid #FFFFCC;
+	border-radius: 50%;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	z-index: 10;
+	margin-left: -100px;
+}
+.mysex{
+	font-weight: bolder;
+	margin-left: 20px;
+	color: #0099CC;
+}
+
+.imgbanner_box{
+	position: absolute;
+	top: 30%;
+	right: 0px;
+	width: 80px;
+	height: 30px;
+	background-color: rgba(0,0,0,0.8);
+	color: rgba(255,255,255,1);
+	line-height: 30px;
+	text-align: center;
+	border-radius: 5px;
+
+}
+.sec1_info p{
+	padding-top: 15px;
+	line-height: 30px;
+	text-align: center;
+}
+
+
+.sec1_info_1{
+	position: absolute;
+	top: 10%;
+	right: 10%;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	display: none;
+}
+
+.sec1_info_2{
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	display: none;
+}
+
+.sec1_info_3{
+	position: absolute;
+	top: 60%;
+	right: 10%;
+
+}
+
+.sec1_info_3 p{
+	width: 600px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.sec1_info_3 h1{
+	font-size: 36px;
+	
+}
+.sec1_title{
+	position: absolute;
+	top: 10px;
+	left: 0;
+	border-bottom: 3px solid white;
+	transform:rotate(-20deg);
+	-ms-transform:rotate(-20deg); 	/* IE 9 */
+	-moz-transform:rotate(-20deg); 	/* Firefox */
+	-webkit-transform:rotate(-20deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-20deg); 		/* Opera */
+}
+.sec2_title{
+	position: absolute;
+	top: 10px;
+	left: 0;
+	border-bottom: 3px solid black;
+	transform:rotate(-20deg);
+	-ms-transform:rotate(-20deg); 	/* IE 9 */
+	-moz-transform:rotate(-20deg); 	/* Firefox */
+	-webkit-transform:rotate(-20deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-20deg); 		/* Opera */
+}
+
+.skill_list{
+	position: absolute;
+	top: 0%;
+	padding-top: 10%;
+	left:  10%;
+	width: 30%;
+	height: 100%;
+	list-style: none;
+}
+
+.skill_list span{
+	float: left;
+	position: relative;
+	right: 20%;
+}
+
+.skill_list li{
+	font-size: 18px;
+	height: 3%;
+	line-height: 3%;
+	margin: 10%;
+}
+
+.skill_list li progress{
+	width: 70%;
+	color: #FF9933;
+	border: 0px solid white;
+	background-color: white;
+	position: relative;	
+	height: 30%;
+	border-radius: 10px;
+	float: right;
+}
+
+.skill_list li progress::-moz-progress-bar { background: #FF9933; }
+.skill_list li progress::-webkit-progress-bar { background: white; }
+.skill_list li progress::-webkit-progress-value  { background: #FF9933; }
+
+.skill_info{
+	position: absolute;
+	top: 5%;
+	right: 10%;
+	width: 30%;
+	height: 100%;
+	display: none;
+}
+
+.skill_info p{
+	height: 8%;
+}
+
+.sec3{
+	color: white;
+}
+
+.sec3_title{
+	position: absolute;
+	top: 10px;
+	left: 0;
+	color: white;
+	border-bottom: 3px solid white;
+	transform:rotate(-20deg);
+	-ms-transform:rotate(-20deg); 	/* IE 9 */
+	-moz-transform:rotate(-20deg); 	/* Firefox */
+	-webkit-transform:rotate(-20deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-20deg); 		/* Opera */
+}
+
+.sec3_pro{
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -25%;
+	display: none;
+}
+
+.sec3_pro div{
+	height: 25%;
+}
+
+.sec3_pro h1{
+	
+	text-align: center;
+}
+
+.sec3_pro p{
+	text-align: center;
+	font-size: 18px;
+}
+
+.sec4_about{
+	width: 80%;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -40%;
+	display: none;
+}
+
+.sec4_about>div{
+
+	height: 50%;
+	position: relative;
+}
+
+.sec4_about>div>h1{
+	position: absolute;
+	padding-right: 10px;
+	top: 30%;
+	left: 5%;
+	border-right: 4px solid white;
+}
+
+.sec4_about>div div{
+	position: absolute;
+
+	top: 15%;
+	left: 30%;
+}
+
+.sec5_call{
+	width: 100%;
+	position: absolute;
+	top: 30%;
+}
+
+.callme{
+	display: block;
+	margin: 0 auto;
+	width: 400px;
+	height: 70px;
+	font-size: 24px;
+	color: black;
+	opacity: 0.5;
+	background-color: white;
+	text-decoration: none;
+	text-align: center;
+	line-height: 70px;
+	border: 3px solid black;
+	cursor: pointer;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s; /* Firefox 4 */
+	-webkit-transition: all 0.5s; /* Safari 和 Chrome */
+	-o-transition: all 0.5s; /* Opera */
+	outline: none;
+}
+
+
+
+.callme:hover{
+	opacity: 1;
+}
+.imgbox img{
+	position: relative;
+
+	transition: all 1s;
+	
+}
+
+.imgbox img:hover{
+	transform:rotate(-9deg);
+	-ms-transform:rotate(-9deg); 	/* IE 9 */
+	-moz-transform:rotate(-9deg); 	/* Firefox */
+	-webkit-transform:rotate(-9deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-9deg); 
+	
+
+}
