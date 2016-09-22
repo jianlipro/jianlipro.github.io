@@ -173,8 +173,7 @@ a{
 
 .sec1_info_3{
 	position: absolute;
-	position: absolute;
-	bottom: 20%;
+	top: 60%;
 	right: 10%;
 
 }
@@ -213,16 +212,19 @@ a{
 }
 
 .skill_list{
-	width: 40%;
+	position: absolute;
+	top: 0%;
+	padding-top: 10%;
+	left:  10%;
+	width: 30%;
 	height: 100%;
 	list-style: none;
-	position: absolute;
-	top: 0;
-	left: 10%;
 }
 
 .skill_list span{
 	float: left;
+	position: relative;
+	right: 20%;
 }
 
 .skill_list li{
@@ -233,7 +235,7 @@ a{
 }
 
 .skill_list li progress{
-	width: 300px;
+	width: 70%;
 	color: #FF9933;
 	border: 0px solid white;
 	background-color: white;
