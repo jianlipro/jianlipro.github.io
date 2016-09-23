@@ -44,9 +44,10 @@ a{
 }
 
 #maskmain h1{
+	font-size: 36px;
 	position: absolute;
 	display: none;
-	top: 30px;
+	top: 10%;
 
 }
 
@@ -118,7 +119,7 @@ a{
 	height: 200px;
 	overflow: hidden;
 	border: 2px solid #FFFFCC;
-	border-radius: 50%;
+	/* border-radius: 50%; */
 	position: absolute;
 	top: 20%;
 	left: 50%;
@@ -131,19 +132,6 @@ a{
 	color: #0099CC;
 }
 
-.imgbanner_box{
-	position: absolute;
-	top: 30%;
-	right: 0px;
-	width: 80px;
-	height: 30px;
-	background-color: rgba(0,0,0,0.8);
-	color: rgba(255,255,255,1);
-	line-height: 30px;
-	text-align: center;
-	border-radius: 5px;
-
-}
 .sec1_info p{
 	padding-top: 15px;
 	line-height: 30px;
@@ -281,7 +269,7 @@ a{
 
 .sec3_pro{
 	width: 50%;
-	height: 100%;
+	height: 92%;
 	position: absolute;
 	left: 50%;
 	margin-left: -25%;
@@ -293,8 +281,8 @@ a{
 }
 
 .sec3_pro h1{
-	
 	text-align: center;
+	font-size: 24px;
 }
 
 .sec3_pro p{
@@ -327,8 +315,7 @@ a{
 
 .sec4_about>div div{
 	position: absolute;
-
-	top: 15%;
+	top: 20%;
 	left: 30%;
 }
 
@@ -366,15 +353,16 @@ a{
 }
 .imgbox img{
 	position: relative;
-
 	transition: all 1s;
 	
 }
 
 .imgbox img:hover{
-	transform:rotate(-9deg);
-	-ms-transform:rotate(-9deg); 	/* IE 9 */
-	-moz-transform:rotate(-9deg); 	/* Firefox */
-	-webkit-transform:rotate(-9deg); /* Safari 和 Chrome */
-	-o-transform:rotate(-9deg); 
+	transform: scale3d(2,2,2); 
+	-ms-transform: scale3d(2,2,2); 	/* IE 9 */
+	-moz-transform: scale3d(2,2,2);	/* Firefox */
+	transform: scale3d(2,2,2);  /* Safari 和 Chrome */
+	-o-transform: scale3d(2,2,2);
+	
+
 }
