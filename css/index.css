@@ -5,6 +5,10 @@ a{
 	text-decoration: none;
 }
 
+a[title='phonenumber']{
+	text-decoration: none;
+	color: black;
+}
 
 #mask{
 	position: fixed;
@@ -347,10 +351,20 @@ a{
 }
 
 
-
 .callme:hover{
 	opacity: 1;
 }
+
+.callme_1{
+	background-color:white;
+	opacity: 1;
+}
+
+.callme_1:hover{
+	background-color:white;
+	opacity: 1;
+}
+
 .imgbox img{
 	position: relative;
 	transition: all 1s;

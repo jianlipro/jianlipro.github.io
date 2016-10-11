@@ -47,7 +47,7 @@ $(".imgbox").hover(function(){
         $(".imgbanner_box").stop().fadeIn(200);
     },function(){
         $(".imgbanner_box").stop().fadeOut(200);
-    })
+    });
 //第一屏信息展示
 function sec1InfoShow(speed){
     $(".sec1_info_1").slideDown(speed);
@@ -65,12 +65,12 @@ for(i=0;i<$probar.length;i++){
 }
 //初始化为零，不然无动画效果。                 
 $probar.each(function(index, el) {
-     $(this).val(0) 
+     $(this).val(0);
 });
 //进度条动画
 function showbar(){
     $probar.each(function(index, el) {
-         $(this).animate({value: barvalue[index]}, 2000) 
+         $(this).animate({value: barvalue[index]}, 2000); 
         });     
 }
 //进度条清零
@@ -100,7 +100,7 @@ var show={
                 $('.skill_info').fadeOut(500);
                 $('.sec3_pro').fadeOut(500);
             }
-        }
+        };
 // fullgpage插件设置
 $('#fullpage').fullpage({
     'verticalCentered': false,
@@ -116,16 +116,16 @@ $('#fullpage').fullpage({
         var loadedSection = $(this);
             //using index
         if(index == 1){
-            show.sec1()
+            show.sec1();
         }
         if(index == 2){
-            show.sec2()
+            show.sec2();
         }
         if(index == 3){
-            show.sec3()
+            show.sec3();
         }
         if(index == 4){
-            show.sec4()
+            show.sec4();
         }
     },
 //离开进度条清零
@@ -134,6 +134,6 @@ $('#fullpage').fullpage({
                         clearbar();
                     }
             }   
-})
+});
 
 });
