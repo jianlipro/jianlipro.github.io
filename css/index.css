@@ -409,10 +409,11 @@ a[title='phonenumber']{
 
 .topslide{
 	position: absolute;
+	text-align: center;
 	width: 100px;
 	bottom: 0;
 	left: 50%;
-	margin-left: -0px;
+	margin-left: -50px;
 }
 
 #mask{
