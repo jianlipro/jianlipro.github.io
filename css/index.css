@@ -1,3 +1,4 @@
+@media screen and (min-width: 768px){
 *{
 	font-family: 'Comic Sans MS','微软雅黑';
 }
@@ -8,6 +9,14 @@ a{
 a[title='phonenumber']{
 	text-decoration: none;
 	color: black;
+}
+
+.topslide{
+	position: absolute;
+	width: 100px;
+	bottom: 0;
+	left: 50%;
+	margin-left: -0px;
 }
 
 #mask{
@@ -147,7 +156,7 @@ a[title='phonenumber']{
 	position: absolute;
 	top: 10%;
 	right: 10%;
-	width: 200px;
+	width: 150px;
 	height: 200px;
 	border-radius: 50%;
 	display: none;
@@ -156,8 +165,8 @@ a[title='phonenumber']{
 .sec1_info_2{
 	position: absolute;
 	bottom: 10%;
-	left: 10%;
-	width: 200px;
+	left: 0%;
+	width: 150px;
 	height: 200px;
 	border-radius: 50%;
 	display: none;
@@ -165,19 +174,19 @@ a[title='phonenumber']{
 
 .sec1_info_3{
 	position: absolute;
-	top: 60%;
-	right: 10%;
-
+	top: 65%;
+	left: 40%;
 }
 
 .sec1_info_3 p{
-	width: 600px;
+	width: 200px;
 	height: 30px;
 	line-height: 30px;
+	text-align: center
 }
 
 .sec1_info_3 h1{
-	font-size: 36px;
+	font-size: 30px;
 	
 }
 .sec1_title{
@@ -273,8 +282,9 @@ a[title='phonenumber']{
 
 .sec3_pro{
 	width: 50%;
-	height: 92%;
+	height: 80%;
 	position: absolute;
+	top: 10%;
 	left: 50%;
 	margin-left: -25%;
 	display: none;
@@ -378,3 +388,396 @@ a[title='phonenumber']{
 	transform: scale3d(2,2,2);  /* Safari 和 Chrome */
 	-o-transform: scale3d(2,2,2);
 }
+
+}
+
+
+
+/* 移动端 */
+@media screen and (max-width: 767px){
+*{
+	font-family: 'Comic Sans MS','微软雅黑';
+}
+a{
+	text-decoration: none;
+}
+
+a[title='phonenumber']{
+	text-decoration: none;
+	color: black;
+}
+
+.topslide{
+	position: absolute;
+	width: 100px;
+	bottom: 0;
+	left: 50%;
+	margin-left: -0px;
+}
+
+#mask{
+	position: fixed;
+	z-index: 1000;
+	background-color:#CCFFCC;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+
+}
+
+#maskleft{
+	width: 50%;
+	height: 100%;
+	background-color: #333333;
+	position: absolute;
+	display: none;
+}
+
+#maskright{
+	width: 50%;
+	height: 100%;
+	background-color: #339999;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: none;
+}
+
+#maskmain{
+	background-color: #CCFFCC;
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	left: 25%;
+
+}
+
+#maskmain h1{
+	font-size: 36px;
+	position: absolute;
+	display: none;
+	top: 10%;
+
+}
+
+#maskmain hr{
+	position: absolute;
+	top: 30px;
+	width: 0;
+	height: 1px;
+	background-color: black;
+	border: 1px solid black;
+}
+
+#maskmain p{
+	font-size: 24px;
+	width: 100px;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: -50px;
+}
+
+.enter{
+	width: 200px;
+	height: 50px;
+	font-size: 24px;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	background-color: white;
+	border: 3px solid black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -25px;
+	margin-left: -100px;
+	cursor: pointer;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s; /* Firefox 4 */
+	-webkit-transition: all 0.5s; /* Safari 和 Chrome */
+	-o-transition: all 0.5s; /* Opera */
+	outline: none;
+}
+.enter:visited{
+	color: black;
+}
+.enter:hover{
+	background-color: black;
+	color: white;
+}
+.fp-controlArrow.fp-prev{
+	opacity: 0.5;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+}
+
+.fp-controlArrow.fp-next{
+	opacity: 0.5;
+	position: absolute;
+	top: 50%;
+	right: 10%;
+}
+.sec1,.sec5{
+	color: #FFFFCC;
+}
+.imgbox{
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border: 2px solid #FFFFCC;
+	/* border-radius: 50%; */
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	z-index: 10;
+	margin-left: -100px;
+}
+.mysex{
+	font-weight: bolder;
+	margin-left: 20px;
+	color: #0099CC;
+}
+
+.sec1_info p{
+	padding-top: 15px;
+	line-height: 30px;
+	text-align: center;
+}
+
+
+.sec1_info_1{
+	position: absolute;
+	top: 10%;
+	right: 10%;
+	width: 150px;
+	height: 200px;
+	border-radius: 50%;
+	display: none;
+}
+
+.sec1_info_2{
+	position: absolute;
+	bottom: 10%;
+	left: 0%;
+	width: 150px;
+	height: 200px;
+	border-radius: 50%;
+	display: none;
+}
+
+.sec1_info_3{
+	position: absolute;
+	top: 65%;
+	left: 40%;
+}
+
+.sec1_info_3 p{
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center
+}
+
+.sec1_info_3 h1{
+	font-size: 30px;
+	
+}
+.sec1_title{
+	position: absolute;
+	top: 10px;
+	left: 0;
+	border-bottom: 3px solid white;
+	transform:rotate(-20deg);
+	-ms-transform:rotate(-20deg); 	/* IE 9 */
+	-moz-transform:rotate(-20deg); 	/* Firefox */
+	-webkit-transform:rotate(-20deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-20deg); 		/* Opera */
+}
+.sec2_title{
+	position: absolute;
+	top: 10px;
+	left: 0;
+	border-bottom: 3px solid black;
+	transform:rotate(-20deg);
+	-ms-transform:rotate(-20deg); 	/* IE 9 */
+	-moz-transform:rotate(-20deg); 	/* Firefox */
+	-webkit-transform:rotate(-20deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-20deg); 		/* Opera */
+}
+
+.skill_list{
+	position: absolute;
+	top: 15%;
+	left:  0%;
+	width: 30%;
+	list-style: none;
+}
+
+.skill_list span{
+	width: 30%;
+
+}
+
+.skill_list li{
+	width: 100%;
+	margin-bottom: 20px;
+	
+}
+
+.skill_list li progress{
+	width: 100%;
+	color: #FF9933;
+	border: 0px solid white;
+	background-color: white;
+	position: relative;	
+	border-radius: 10px;
+}
+
+.skill_list li progress::-moz-progress-bar { background: #FF9933; }
+.skill_list li progress::-webkit-progress-bar { background: white; }
+.skill_list li progress::-webkit-progress-value  { background: #FF9933; }
+
+.skill_info{
+	position: absolute;
+	top: 5%;
+	right: 0%;
+	width: 60%;
+	height: 100%;
+	display: none;
+}
+
+.skill_info p{
+	margin: 15px;
+}
+
+.sec3{
+	color: white;
+}
+
+.sec3_title{
+	position: absolute;
+	top: 10px;
+	left: 0;
+	color: white;
+	border-bottom: 3px solid white;
+	transform:rotate(-20deg);
+	-ms-transform:rotate(-20deg); 	/* IE 9 */
+	-moz-transform:rotate(-20deg); 	/* Firefox */
+	-webkit-transform:rotate(-20deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-20deg); 		/* Opera */
+}
+
+.sec3_pro{
+	width: 50%;
+	height: 80%;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	margin-left: -25%;
+	display: none;
+}
+
+.sec3_pro div{
+	height: 25%;
+}
+
+.sec3_pro h1{
+	text-align: center;
+	font-size: 24px;
+}
+
+.sec3_pro p{
+	text-align: center;
+	font-size: 18px;
+}
+
+.sec4_about{
+	width: 80%;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -40%;
+	display: none;
+}
+
+.sec4_about>div{
+
+	height: 50%;
+	position: relative;
+}
+
+.sec4_about>div>h1{
+	position: absolute;
+	padding-right: 10px;
+	top: 30%;
+	left: 5%;
+	border-right: 4px solid white;
+}
+
+.sec4_about>div div{
+	position: absolute;
+	top: 20%;
+	left: 30%;
+}
+
+.sec5_call{
+	width: 100%;
+	position: absolute;
+	top: 30%;
+}
+
+.callme{
+	display: block;
+	margin: 0 auto;
+	width: 400px;
+	height: 70px;
+	font-size: 24px;
+	color: black;
+	opacity: 0.5;
+	background-color: white;
+	text-decoration: none;
+	text-align: center;
+	line-height: 70px;
+	border: 3px solid black;
+	cursor: pointer;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s; /* Firefox 4 */
+	-webkit-transition: all 0.5s; /* Safari 和 Chrome */
+	-o-transition: all 0.5s; /* Opera */
+	outline: none;
+}
+
+
+.callme:hover{
+	opacity: 1;
+}
+
+.callme_1{
+	background-color:white;
+	opacity: 1;
+}
+
+.callme_1:hover{
+	background-color:white;
+	opacity: 1;
+}
+
+.imgbox img{
+	position: relative;
+	transition: all 1s;
+	
+}
+
+.imgbox img:hover{
+	transform: scale3d(2,2,2); 
+	-ms-transform: scale3d(2,2,2); 	/* IE 9 */
+	-moz-transform: scale3d(2,2,2);	/* Firefox */
+	transform: scale3d(2,2,2);  /* Safari 和 Chrome */
+	-o-transform: scale3d(2,2,2);
+}
+
+}
+

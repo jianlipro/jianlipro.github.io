@@ -1,4 +1,14 @@
 $(function(){
+var topslide = $('.topslide');
+var topslidetimer = setInterval(function(){
+    topslide.animate({
+    opacity: 0,
+    },
+    1000, function() {
+    $(this).animate({opacity: 1}, 1000);
+});
+},2000);
+
 // 遮罩层
 var $mask=$("#mask");
 (function showmask(i){
