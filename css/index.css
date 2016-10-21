@@ -140,6 +140,10 @@ a[title='phonenumber']{
 	z-index: 10;
 	margin-left: -100px;
 }
+.imgbox img{
+	width: 200px;
+	height: auto;
+}
 .mysex{
 	font-weight: bolder;
 	margin-left: 20px;
@@ -524,16 +528,20 @@ a[title='phonenumber']{
 	color: #FFFFCC;
 }
 .imgbox{
-	width: 200px;
-	height: 200px;
+	width: 100px;
+	height: 100px;
 	overflow: hidden;
-	border: 2px solid #FFFFCC;
+	border: 1px solid #FFFFCC;
 	/* border-radius: 50%; */
 	position: absolute;
-	top: 20%;
+	top: 30%;
 	left: 50%;
 	z-index: 10;
-	margin-left: -100px;
+	margin-left: -50px;
+}
+.imgbox img{
+	width: 100px;
+	height:auto;
 }
 .mysex{
 	font-weight: bolder;
@@ -551,7 +559,7 @@ a[title='phonenumber']{
 .sec1_info_1{
 	position: absolute;
 	top: 10%;
-	right: 10%;
+	right: 0%;
 	width: 150px;
 	height: 200px;
 	border-radius: 50%;
@@ -570,12 +578,13 @@ a[title='phonenumber']{
 
 .sec1_info_3{
 	position: absolute;
+	width: 45%;
 	top: 65%;
-	left: 40%;
+	right: 5%;
 }
 
 .sec1_info_3 p{
-	width: 200px;
+	width: 100%;
 	height: 30px;
 	line-height: 30px;
 	text-align: center
