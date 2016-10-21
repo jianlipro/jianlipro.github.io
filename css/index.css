@@ -545,7 +545,7 @@ a[title='phonenumber']{
 }
 .mysex{
 	font-weight: bolder;
-	margin-left: 20px;
+	margin-left: 0px;
 	color: #0099CC;
 }
 
@@ -591,7 +591,7 @@ a[title='phonenumber']{
 }
 
 .sec1_info_3 h1{
-	font-size: 30px;
+	font-size: 24px;
 	
 }
 .sec1_title{
